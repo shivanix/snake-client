@@ -15,10 +15,10 @@ const connect = function () {
     console.log(`server has said: ${message}`);
   });
 
-  conn.on("connect1", function () {
+  conn.on("connect", function () {
     console.log(`Successfully connected to game server`);
   })
-  conn.on('connect2', () => {
+  conn.on('connect', () => {
     conn.write("Name: GGG");
 
   })
